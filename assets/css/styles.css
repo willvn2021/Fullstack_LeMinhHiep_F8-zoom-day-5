@@ -164,6 +164,10 @@
     box-shadow: 0 0 0 3px rgba(62, 92, 202, 0.2);
 }
 
+.form-input:invalid {
+    border-color: #dc3545;
+}
+
 .form-input::placeholder {
     color: #aaa;
     font-style: italic;
@@ -204,4 +208,30 @@
     margin-right: 5px;
     width: 15px;
     height: 15px;
+}
+
+.form-label.required::before {
+    display: inline;
+    content: "(*)";
+    color: #dc3545;
+}
+
+.btn {
+    background-color: #fcb045;
+    border: none;
+    outline: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.btn:active {
+    color: #dc3545;
 }
